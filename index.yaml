@@ -3,11 +3,58 @@ entries:
   helm-chart-test:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-08T05:08:17.084822-08:00"
+    created: "2020-12-08T05:28:47.196148-08:00"
     description: A Helm chart for Kubernetes
     digest: a46e0b9e6c4371798292542b36f25156f81b526b6780c20d0184344c547b4a78
     name: helm-chart-test
     urls:
-    - https://github.com/ehallmarksolutions/helm-chart.git/helm-chart-test-0.1.0.tgz
+    - helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2020-12-08T05:08:17.084356-08:00"
+  livy:
+  - apiVersion: v1
+    appVersion: v0.8.0-incubating-SNAPSHOT
+    created: "2020-12-08T05:28:47.196755-08:00"
+    description: Apache Livy server to run Spark on Kubernetes
+    digest: 222df255f5ef2fb5e26522c9366d2d390eaa1f51dac1c2fcbde72d5921e669e3
+    home: https://livy.incubator.apache.org/
+    icon: https://livy.incubator.apache.org/assets/themes/apache/img/logo.png
+    keywords:
+    - livy
+    - spark
+    kubeVersion: '>=1.13.0-0'
+    maintainers:
+    - email: jahstreetlove@gmail.com
+      name: jahstreet
+    name: livy
+    sources:
+    - https://github.com/jahstreet/spark-on-kubernetes-helm/tree/master/charts/livy
+    - https://github.com/jahstreet/spark-on-kubernetes-docker/tree/master/livy
+    - https://github.com/apache/incubator-livy/pull/167
+    urls:
+    - livy/livy-2.0.0.tgz
+    version: 2.0.0
+  spark-cluster:
+  - apiVersion: v1
+    appVersion: 3.0.1
+    created: "2020-12-08T05:28:47.199599-08:00"
+    description: Spark cluster with Livy and JupyterHub on Kubernetes
+    digest: c70bd7cb77c37225770ee319200ec18900b5c9ba711aae7b7e6edd9bf814a7a3
+    home: https://github.com/jahstreet/spark-on-kubernetes-helm
+    keywords:
+    - livy
+    - spark
+    - jupyterhub
+    - history-server
+    kubeVersion: '>=1.13.0-0'
+    maintainers:
+    - email: jahstreetlove@gmail.com
+      name: jahstreet
+    name: spark-cluster
+    sources:
+    - https://github.com/jahstreet/spark-on-kubernetes-helm
+    - https://github.com/jahstreet/spark-on-kubernetes-docker
+    - https://github.com/apache/incubator-livy/pull/167
+    urls:
+    - spark-cluster/spark-cluster-2.0.1.tgz
+    version: 2.0.1
+generated: "2020-12-08T05:28:47.195291-08:00"
